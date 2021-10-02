@@ -10,9 +10,7 @@ colors.forEach((color) => {
 });
 
 function findColor(color, colors) {
-  //   const colorRegExp = new RegExp(color, "i");
   return colors.filter((mtcColor) => {
-    // return mtcColor.match(colorRegExp);
     return mtcColor.includes(color);
   });
 }
@@ -21,7 +19,7 @@ const showColor = function () {
   const matchColor = findColor(searchInput.value, colorArr);
   const html = matchColor
     .map((color) => {
-      return `<div class="color" style="background:${colour}"></div>`;
+      return `<div class="color" style="background:${color}"></div>`;
     })
     .join("");
   results.innerHTML = html;
