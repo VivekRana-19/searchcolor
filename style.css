@@ -9,7 +9,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Poppins", sans-serif;
+  font-family: "helvetica", sans-serif;
 }
 .container {
   height: 100%;
@@ -45,7 +45,7 @@ body {
 }
 
 .result > * {
-  height: 100px;
+  height: 150px;
   border: 1px solid black;
 }
 /* 
